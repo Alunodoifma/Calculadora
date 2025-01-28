@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Funciona a Calculadora de Empréstimo</title>
+
+    <style>
+        /* Resetando margens e padding padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definindo o fundo da página com o mesmo gradiente da calculadora */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #2a7fd0, #00bfae); /* Novo gradiente de fundo igual ao da calculadora */
+            color: white;
+            line-height: 1.6;
+            padding: 30px;
+        }
+
+        /* Estilo para o container principal */
+        #explicacao {
+            background: rgba(255, 255, 255, 0.9); /* Fundo claro para a área de explicação */
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        /* Títulos principais */
+        h3, h4 {
+            font-size: 1.7em;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        /* Parágrafos e textos */
+        p, ul, ol {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para listas */
+        ul, ol {
+            margin-left: 25px;
+        }
+
+        /* Itens da lista */
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* Destaques para os textos importantes */
+        strong {
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        /* Estilo para código ou pre */
+        pre {
+            background-color: #e6e6e6;
+            padding: 12px;
+            border-radius: 5px;
+            color: #333;
+            font-family: "Courier New", monospace;
+        }
+
+        /* Estilo para links */
+        a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+        <div id="explicacao">
+            <h3>Como a Calculadora de Empréstimos Funciona?</h3>
+            <p>Esta ferramenta foi criada para simplificar o cálculo das parcelas de empréstimos. Ela leva em consideração o valor que você pretende emprestar, a taxa de juros mensal e o número de parcelas, para fornecer o valor exato da sua parcela mensal e o total pago ao final do empréstimo.</p>
+            
+            <h4>Entenda a Fórmula Usada:</h4>
+            <p>A fórmula para calcular o valor das parcelas mensais é baseada em uma equação financeira chamada <strong>Fórmula de Amortização</strong>, que considera a taxa de juros aplicada ao valor principal do empréstimo durante o tempo total de pagamento.</p>
+            <pre>
+PMT = (P × i) / (1 - (1 + i)^-n)
+            </pre>
+            <p>Onde:</p>
+            <ul>
+                <li><strong>PMT</strong>: O valor da parcela mensal.</li>
+                <li><strong>P</strong>: O valor do empréstimo (capital).</li>
+                <li><strong>i</strong>: A taxa de juros mensal, representada como um número decimal (ex: 2% vira 0,02).</li>
+                <li><strong>n</strong>: O número de parcelas a ser pago (meses).</li>
+            </ul>
+            
+            <h4>Como Funciona o Cálculo?</h4>
+            <p>O cálculo da parcela mensal funciona da seguinte forma:</p>
+            <ol>
+                <li>Você insere o valor do empréstimo, a taxa de juros mensal e o número de parcelas desejadas.</li>
+                <li>A taxa de juros fornecida é transformada de percentual para decimal (exemplo: 5% vira 0,05).</li>
+                <li>Usando a fórmula, a calculadora determina o valor fixo de cada parcela mensal (PMT).</li>
+                <li>Além disso, a calculadora calcula o total pago durante todo o período, multiplicando o valor da parcela mensal pelo número total de meses.</li>
+            </ol>
+
+            <h4>Exemplo Prático:</h4>
+            <p>Imagine que você tem um empréstimo de <strong>R$ 2.500</strong>, com uma taxa de juros de <strong>1.5% ao mês</strong> e um prazo de <strong>24 meses</strong> para pagar. A conta seria a seguinte:</p>
+            <ul>
+                <li><strong>Parcela mensal</strong>: R$ 125,74</li>
+                <li><strong>Total pago ao final do empréstimo</strong>: R$ 3.018,00</li>
+            </ul>
+            <p>Ou seja, você pagará R$ 125,74 por mês e, ao final do empréstimo, terá pago R$ 3.018,00 no total, considerando os juros.</p>
+
+            <h4>Outro Exemplo:</h4>
+            <p>Se você pegar um empréstimo de <strong>R$ 500</strong>, com uma taxa de juros de <strong>4%</strong> ao mês e um prazo de <strong>6 meses</strong>, o cálculo seria:</p>
+            <ul>
+                <li><strong>Parcela mensal</strong>: R$ 96,65</li>
+                <li><strong>Total pago ao final do empréstimo</strong>: R$ 579,91</li>
+            </ul>
+            <p>Logo, ao final de 6 meses, o valor total pago será superior ao valor emprestado devido aos juros acumulados durante o período.</p>
+
+            <h4>Por que Utilizar a Calculadora?</h4>
+            <p>Essa ferramenta ajuda você a entender com mais clareza como o valor das parcelas e o total pago podem variar dependendo do valor emprestado, da taxa de juros e do tempo de pagamento. Isso é fundamental para que você tome decisões mais informadas ao solicitar um empréstimo.</p>
+
+            <p>Se você tem mais dúvidas ou precisa de mais informações, <a href="index.html">volte para a página inicial</a> ou consulte nosso guia completo sobre empréstimos.</p>
+        </div>
+</body>
+</html>

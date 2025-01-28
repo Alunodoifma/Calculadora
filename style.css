@@ -1,0 +1,114 @@
+* {
+    font-family: 'Roboto', sans-serif; /* Alterando a fonte para 'Roboto' */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #2a7fd0, #00bfae); /* Novo gradiente de fundo */
+    color: white;
+}
+
+#calculadora {
+    background-color: #121212; /* Fundo mais escuro */
+    padding: 40px;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra mais suave */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculadora h2 {
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+#calculadora h2::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: linear-gradient(90deg, #00bfae, #2a7fd0); /* Novo gradiente para o título */
+    bottom: -5px;
+}
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label {
+    font-size: 16px;
+    color: #f1f1f1; /* Cor do texto das labels */
+    font-weight: 500;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00bfae; /* Cor de destaque no input */
+    color: #f1f1f1;
+    font-size: 20px;
+    padding: 8px 5px;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-bottom: 2px solid #2a7fd0; /* Mudança na borda quando em foco */
+}
+
+#result {
+    text-align: center;
+}
+
+#parcel, #total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00bfae; /* Cor vibrante para os resultados */
+}
+
+#calculate {
+    background: linear-gradient(40deg, #2a7fd0, #00bfae);
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#calculate:hover {
+    background: linear-gradient(60deg, #00bfae, #2a7fd0);
+    transform: scale(1.05); /* Efeito de aumento no hover */
+}
+
+button {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+a {
+    text-decoration: none;
+}
